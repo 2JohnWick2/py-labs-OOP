@@ -8,7 +8,7 @@ BOOKS_DATABASE = [
         "id": 2,
         "name": "test_name_2",
         "pages": 400,
-    }
+    },
 ]
 
 
@@ -24,6 +24,7 @@ class Book:
         self.id = id_
         self.name = name
         self.pages = pages
+
     def __str__(self):
         """
         Возвращаем строковое представление книги для пользователя
@@ -37,6 +38,7 @@ class Book:
 
         """
         return f"Book(id_={self.id}, name={repr(self.name)}, pages={self.pages})"
+
 
 if __name__ == '__main__':
     # инициализируем список книг
